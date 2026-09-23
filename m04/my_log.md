@@ -54,6 +54,8 @@ Reflections on success/failure of this prompt:
 *   Some research was needed to know what keys should be parsed for in company_data.json.
 *   The small scope of the prompt as well as its specificity ensured that the AI was able to easily handle the task. Any changes could be implemented without breaking the working code. 
 
+----
+
 Text of my next prompt:
 
 > Work in the directory m04. Update the script data_extraction.py. The script should extract annual revenue from both the 'RevenueFromContractWithCustomerExcludingAssessedTax' key for entries after 2018 and the other relevant revenue key for entries before 2018. 
@@ -62,6 +64,20 @@ Reflections on success/failure of this prompt:
 
 *   The prompt was successful. The script data_extraction.py now returns data from 2016 onward as expected. 
 *   The prompt was not specific regarding what key to use to extract revenue data from before 2018. This is due to my limited knowledge of US-GAAP practices and taxonomy.
+
+----
+
+Text of my next prompt:
+
+> Work in the directory m04. I want to build a simple web app called financial_dashboard.py. This web app should take a CIK number as input from the user. The existing scripts, sec_data_fetch.py and data_extraction.py should be used to create a new revenue_income_asset_data.json file for the given CIK number. Using the data in revenue_income_asset_data.json, 3 plots should be generated and displayed on the dashboard showing revenue, income and asset value per year over the last 10 years. The webapp should have a simple, corporate design with blue, white and grey as the main colours and professional fonts. Use logic from the existing scripts sec_data_fetch.py and data_extraction.py as far as possible.  
+
+Reflections on success/failure of this prompt:
+
+*   The prompt was successful. A web app that takes a CIK number as input and shows the plots for the 3 parameters was successfully made.
+*   The prompt did not specify the design of the web app beyond color and basic appearance. This was intentional and I intend to refine it going forward.
+*   The prompt was highly specific in terms of what input parameters should be taken, what data should be generated and how it should be dispalyed. This followed logically from my problem decomposition and my prompting up to this point, increasing the chance of success.
+*   The prompt specifies what scripts should be used to generate the displayed data. This ensured that verified working scripts were used to generate data and that the new code does not affect the functionality of any of the other scripts.  
+
 ----
 
 **FINAL REFLECTION:** Review your prompting work. How does your work on this pset compare with that of the first pset?
