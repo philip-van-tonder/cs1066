@@ -36,12 +36,32 @@ Text of my next prompt:
 
 Reflections on success/failure of this prompt:
 
-*   WRITE-BULLET-LIST-OF-THOUGHTS
+*   The prompt seemed to be successful upon my initial investigation. The generated script sec_data_fetch.py produced a company_data.json file that contains the company data.
+*   The script obtained the data from the SEC EDGAR API as instructed.
+*   Some research was needed to identify whether the URL the AI used access the EDGAR database contained the information that I required.
+*    The small scope of the prompt as well as its specificity ensured that the AI was able to easily handle the task. 
 
 ----
 
-**NOTE:** Delete this text and repeat the above block for as many prompts as it takes to complete the pset.
+Text of my next prompt:
 
+> Work in the directory m04. Create a new python script called data_extraction.py. Using the file company_data.json, retrieve the total assets from the 'assets' key, the net income from the 'NetIncomeLoss'`key, and the annual revenue from the 'RevenueFromContractWithCustomerExcludingAssessedTax' key. Data for the past 10 financial years should be extracted if available. Only extract data for full financial years, filed as forms 10-K. The output of the script should be a json file called revenue_income_asset_data.json containing the information. 
+
+Reflections on success/failure of this prompt:
+
+*   The prompt was successful, it proudced a .json file containing revenue, income and asset value data from the company_data.json file pulled from the SEC EDGAR API
+*   data_extraction.py only contained data from 2018 onward. Upon further reseach, the revenue tag RevenueFromContractWithCustomerExcludingAssessedTax', did not exist before 2018, causing this issue.
+*   Some research was needed to know what keys should be parsed for in company_data.json.
+*   The small scope of the prompt as well as its specificity ensured that the AI was able to easily handle the task. Any changes could be implemented without breaking the working code. 
+
+Text of my next prompt:
+
+> Work in the directory m04. Update the script data_extraction.py. The script should extract annual revenue from both the 'RevenueFromContractWithCustomerExcludingAssessedTax' key for entries after 2018 and the other relevant revenue key for entries before 2018. 
+
+Reflections on success/failure of this prompt:
+
+*   The prompt was successful. The script data_extraction.py now returns data from 2016 onward as expected. 
+*   The prompt was not specific regarding what key to use to extract revenue data from before 2018. This is due to my limited knowledge of US-GAAP practices and taxonomy.
 ----
 
 **FINAL REFLECTION:** Review your prompting work. How does your work on this pset compare with that of the first pset?
