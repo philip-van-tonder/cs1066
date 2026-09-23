@@ -131,8 +131,6 @@ Reflections on success/failure of this prompt:
 
 ### Other's Review
 
-... YOU DO NOTHING HERE; ANOTHER STUDENT WILL COMPLETE THIS PART IN SECTION ...
-
 ----
 ----
 
