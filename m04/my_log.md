@@ -80,9 +80,20 @@ Reflections on success/failure of this prompt:
 
 ----
 
+> Work in the directory m04. Only change the script financial_dashboard.py. Update the styling of the webapp to use darker blues and more a more striking font for headings. Remove all radii on elements on the webpage, create a clean user interface. Make the dashboard more compact. All 3 plots should be visible without scrolling. Update the label of the y-axis to include the magnitude of dollar amounts. Update the x-axis to indicate the year for each data point. Implement a function that allows me to change the type of plot for each metric individually. Also, validate the CIK number input.
+
+Reflections on success/failure of this prompt:
+
+*   The prompt was successful. All refinements were implemented successfully
+*   GUI changes were not exactly what I had in mind, but I do not see a reason for further refinement. The changes not meeting my expectations was due to a lack of specificity.
+
+----
+
 **FINAL REFLECTION:** Review your prompting work. How does your work on this pset compare with that of the first pset?
 
-... YOUR FINAL REFLECTIONS HERE ...
+My prompting was largely successful and required minimal iteration. Giving the AI the context of the ultimate goal before asking it to solve smaller sub-problems helped ensure that each script built sensibly towards the final web app. My prompts followed the decomposition I planned at the outset, with each sub-problem handled by its own script. This allowed me to verify the output of each script before moving on and ensured that new code did not break code that was already working. My prompts were also specific about what each step needed to accomplish, which made each task easy for the AI to handle. Only two areas required iteration. The first was the revenue extraction, where the RevenueFromContractWithCustomerExcludingAssessedTax tag only exists from 2018 onward, so I had to prompt the AI to also use the older revenue tag for earlier years. The second was the GUI of the web app, which needed refinement mainly because I had not decided exactly what I wanted it to look like.
+
+My prompting approach was similar to the first pset, but I refined it in this one. In both psets I gave the AI small subtasks to handle, but this time my prompts were more specific. I also had a clearer structure and plan for the final app before I started, which allowed me to guide the AI towards the goal more effectively.
 
 ----
 ----
@@ -91,7 +102,7 @@ Reflections on success/failure of this prompt:
 
 When you have a working solution, write a brief statement describing how you ultimately approached the problem's whitespace. What you might have done differently in hindsight, and why? Or defend why your work was a good approach.
 
-... YOUR FINAL REFLECTIONS HERE ...
+I think my approach was ultimately successful, as it produced a working web app in only a few prompts with very little bug fixing. My problem decomposition followed the flow of data through the program, which allowed me to verify each new script as I went and ensured that working scripts were not affected by new code. However, because my prompts were so specific, I needed a clear idea of how I wanted to build the program before I started. Fixing bugs such as the revenue tag issue also required some independent research on my part. In the future, I could give the AI more trust to make implementation decisions and to identify issues like this one on its own, which might reduce the amount of research and planning I need to do upfront.
 
 ----
 ----
