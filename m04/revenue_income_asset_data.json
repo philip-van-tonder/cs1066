@@ -1,62 +1,26 @@
 [
   {
-    "year": 2016,
-    "revenue": 4272000000,
-    "net_income": -497000000,
-    "assets": 3321000000
-  },
-  {
-    "year": 2017,
-    "revenue": 5329000000,
-    "net_income": 43000000,
-    "assets": 3540000000
-  },
-  {
     "year": 2018,
-    "revenue": 6475000000,
-    "net_income": 337000000,
-    "assets": 4556000000
-  },
-  {
-    "year": 2019,
-    "revenue": 6731000000,
-    "net_income": 341000000,
-    "assets": 6028000000
-  },
-  {
-    "year": 2020,
-    "revenue": 9763000000,
-    "net_income": 2490000000,
-    "assets": 8962000000
-  },
-  {
-    "year": 2021,
-    "revenue": 16434000000,
-    "net_income": 3162000000,
-    "assets": 12419000000
-  },
-  {
-    "year": 2022,
-    "revenue": 23601000000,
-    "net_income": 1320000000,
-    "assets": 67580000000
+    "revenue": 21461268000,
+    "net_income": -976091000,
+    "assets": 29739614000
   },
   {
     "year": 2023,
-    "revenue": 22680000000,
-    "net_income": 854000000,
-    "assets": 67885000000
+    "revenue": 96773000000,
+    "net_income": 14997000000,
+    "assets": 106618000000
   },
   {
     "year": 2024,
-    "revenue": 25785000000,
-    "net_income": 1641000000,
-    "assets": 69226000000
+    "revenue": 97690000000,
+    "net_income": 7091000000,
+    "assets": 122070000000
   },
   {
     "year": 2025,
-    "revenue": 34639000000,
-    "net_income": 4335000000,
-    "assets": 76926000000
+    "revenue": 94827000000,
+    "net_income": 3794000000,
+    "assets": 137806000000
   }
 ]
