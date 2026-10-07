@@ -116,4 +116,17 @@ I think my approach was ultimately successful, as it produced a working web app 
 
 ### AI's Review
 
-... PASTE AI'S FEEDBACK ON THIS LAB NOTEBOOK HERE ...
+Overall: This is a well-organized notebook with a clear decomposition that your prompts actually follow. Breaking the pipeline into fetch, extract, and display, with one script per stage, is a sound approach, and you explain why it matters: each stage can be checked on its own, and new code can't break code that already works. Opening with a context-setting prompt was a good choice, and your whitespace reflection shows real self-awareness about the trade-off between detailed upfront planning and giving the AI more latitude.
+
+Strengths: Your prompts are specific about inputs, outputs, file names, and the working directory, which likely explains why you needed so little iteration. Telling the AI to reuse the verified scripts in the dashboard prompt was a smart way to protect working code. Your diagnosis of the revenue tag gap was also good. RevenueFromContractWithCustomerExcludingAssessedTax came in with the ASC 606 adoption around 2018, and you found that through your own research rather than accepting incomplete output.
+
+Areas to strengthen:
+
+Evidence of success is thin. Most reflections say the prompt "was successful" without showing how you checked. Record which CIKs you tested with (ideally a few companies from different industries) and whether you compared any figures against an actual 10-K. This matters because the SEC company facts data has known pitfalls. Each 10-K reports prior years as comparatives, so the same value appears under several filings, and the fy field refers to the filing's fiscal year rather than the period the value covers. Without a spot-check, you can't be sure the extraction isn't mislabeling years or duplicating values.
+The revenue fix isn't fully documented. You don't record which older tag the AI chose (for example Revenues or SalesRevenueNet). Companies also differ in which tags they use, so a fix that works for one CIK may fail for another. Naming the tag and noting whether you tested other companies would make this iteration much more informative. It's also worth stating whether data "from 2016 onward" meets your 10-year goal.
+The final prompt breaks your own method. Your earlier prompts were small and focused, but the last one bundles about eight changes: styling, fonts, layout, axis labels, plot-type switching, and CIK validation. Your reflection says the GUI result didn't match what you had in mind, but it doesn't say what differed or what you would have specified instead. That detail would make the reflection more useful. The last prompt is also missing its "Text of my next prompt:" label.
+The comparison with PSet 1 could be more concrete. "More specific" and "clearer structure" are reasonable claims, but an example would strengthen them, such as one PSet 1 prompt set beside a PSet 2 prompt, or the number of iterations each needed.
+
+Minor fixes: There are several typos to correct: "databse," "proudced," "reseach," "dispalyed," "the URL the AI used access" (missing "to"), and "more a more striking." There's a stray backtick after 'NetIncomeLoss'. The 'assets' key should likely be 'Assets', since US-GAAP tags are case-sensitive.
+
+Summary: This is strong work with a clear, well-executed plan. The main improvement would be to back up your claims of success with the test cases and checks you ran, especially for the data extraction, where subtle errors are easy to miss
